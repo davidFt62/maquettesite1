@@ -1,92 +1,155 @@
 <!DOCTYPE html>
 <html lang="french">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site 1</title>
-</head>
-    <body>
-         <header> <!-- image logo à gauche + boutton submit -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-          <img src="images/logo-jpg.jpg" alt=" votre logo-jpg">
-          <button></button>
+
+
+    <title>Maquette 1</title>
+
+  </head>
+
+
+
+
+  <body>
          
-        </header>
-    
-    
-      <section class="image"> <!-- image mer + Titre site + entrer email + bouton submit-->
-        
-             <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos possimus facere quae.</h1>
-             <label for="email">Enter your email:</label>
-             <button></button>
-             <img src="images/mer.jpg" alt=" image mer ">
-             <input type="email" id="email"
-               pattern=".+@ \.com" size="30" required>
-
-          <section>
-            <h2 class="texte-1"> Lorem ipsum</h2>
-            <p> Lorem ipsum dolor sit,</p>
-            <p> amet consectetur adipisicing</p>
-            <p> Dignissimos possimus facere</p>
-            <p>Dicta molestias porro fuga</p>
-            <p>facilis doloremque perspiciatis!</p>
-          </section>
-          
-          <section>
-            <h2 class="texte-2"> Lorem ipsum</h2>
-            <p> Lorem ipsum dolor sit,</p>
-            <p> amet consectetur adipisicing</p>
-            <p> Dignissimos possimus facere</p>
-            <p>Dicta molestias porro fuga</p>
-            <p>facilis doloremque perspiciatis!</p>
-          </section>
-
-          <section>
-            <h2 class="texte-3"> Lorem ipsum</h2>
-            <p> Lorem ipsum dolor sit,</p>
-            <p> amet consectetur adipisicing</p>
-            <p> Dignissimos possimus facere</p>
-            <p>Dicta molestias porro fuga</p>
-            <p>facilis doloremque perspiciatis!</p>
-          </section>
 
 
-       </section class=" formulaire"> <!-- formulaire contact-->
-    
-         <form action="/ma-page-de-traitement" method="post">
-             <div>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name">
-            </div>
+
+    <header> 
             
-            <div>
-                <label for="lastname">prénom :</label>
-                <input type="text" id="lastname" lastname="user_lastname">
-            </div>
+             <nav class= "nav__header"><!-- logo + button sign up -->
+                      
+                      <a class="nav__logo"><img src="images/logo.png" alt=" votre logo-jpg"></a>
+                      
+                        <div class="nav__link ">                               
+                            <button>Sign up</button>
+                        </div>
+             </nav>  
 
-            <div>
-                <label for="mail">e-mail&nbsp;:</label>
-                <input type="email" id="mail" name="user_mail">
-            </div>
 
-            <div>
-                <label for="phone number">téléphone :</label>
-                <input type="text" id="phone number" name="phone_number">
-            </div>
-        
-            <div>
-               <label for="msg">Message :</label>
-               <textarea id="msg" name="user_message"></textarea>
-            </div>
-        
-            <button type="submit"></button>
+                        <div class="main"> <!-- image mer + Titre + entrer email + bouton submit -->   
 
-          </form>
-    
+                              
+                          
+                             <a classe="main__picture"><img src="images/mer.jpg" alt=" image mer "> </a> 
+                              
+                            <a class ="main__text"><h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit, </h1></a>
+                          
+
+                            <div class= main__adress@>
+                               
+                                    <a class ="adress@__email"><label for="email">Enter your email:</label> </a>
+                                    <a class ="adress@__framed"> <input type="email" id="email" pattern=".+@ \.com" size="30" required> </a>
+                                           
+                            </div>
+                                
+                            <div class=" main__submit"> <button> submit</button> </div>
+                             
+                           
+                      </div>
+
+        </header>
+
+
+
+                </div class="content"> <!--menu x 3-->
+
+
+                      <section class="content__menu1">
+
+                           <h2> Lorem ipsum</h2>
+                           <p> Lorem ipsum dolor sit,</p>
+                           <p> amet consectetur adipisicing</p>
+                           <p> Dignissimos possimus facere</p>
+                           <p>Dicta molestias porro fuga</p>
+                           <p>facilis doloremque perspiciatis!</p>
+
+                      </section>
+                    
+
+
+                      <section class="content__menu2">
+
+                            <h2 class=> Lorem ipsum</h2>
+                            <p> Lorem ipsum dolor sit,</p>
+                            <p> amet consectetur adipisicing</p>
+                            <p> Dignissimos possimus facere</p>
+                            <p>Dicta molestias porro fuga</p>
+                            <p>facilis doloremque perspiciatis!</p>
+
+                      </section>
+                    
+
+
+                      <section class="content__menu3">
+                        
+                            <h2> Lorem ipsum</h2>
+                            <p> Lorem ipsum dolor sit,</p>
+                            <p> amet consectetur adipisicing</p>
+                            <p> Dignissimos possimus facere</p>
+                            <p>Dicta molestias porro fuga</p>
+                            <p>facilis doloremque perspiciatis!</p>
+
+                      </section>
+                    
+                    
+
+
+
+
+                </section class="contact"> <!-- formulaire contact -->
+
+                    
+                     <form class="formulaire__contact" action="/ma-page-de-traitement" method="post">
+
+                         <div class="formulaire__name">
+                              <label for="name">Nom :</label>
+                              <input type="text" id="name" name="user_name">
+                        </div>
+                      
+                        <div class="formulaire__lastname" >
+                              <label for="lastname">prénom :</label>
+                              <input type="text" id="lastname" lastname="user_lastname">
+                        </div>
+                      
+                        <div class="formulaire__email" >
+                              <label for="mail">e-mail&nbsp;:</label>
+                              <input type="email" id="mail" name="user_mail">
+                        </div>
+                      
+                        <div class="formulaire__phonenumber">
+                              <label for="phone number">téléphone :</label>
+                              <input type="text" id="phone number" name="phone_number">
+                        </div>
+                      
+                        <div class="formulaire__message">
+                             <label for="msg">Message :</label>
+                             <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                      
+                          <div class="formulaire__submit">
+                          <button type="submit"><button>submit</button>
+                          </div>
+
+                      </form>
+
+                </section>
+
+
+
         <footer> Mentions légales</footer><!--mentions légales-->
-    
-    </body>
+
+
+
+
+
+  </body>
 
 
 
